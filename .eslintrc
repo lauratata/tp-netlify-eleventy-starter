@@ -2,10 +2,21 @@
   "env": {
     "node": true
   },
-  "extends": ["plugin:prettier/recommended", "prettier"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
   "parser": "@babel/eslint-parser",
-  "plugins": ["babel", "prettier"],
+  "plugins": [
+    "babel",
+    "prettier"
+  ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
